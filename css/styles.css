@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+#clickeadora, #dobleClickeadora{
+    width: min-content;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    animation-duration: 300ms;
+    animation-name: desactivado;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    user-select: none;
+}
+
+@keyframes mostrarClick{
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
